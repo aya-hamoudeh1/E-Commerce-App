@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../../utils/constants/colors.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -43,9 +42,6 @@ class TTermAndConditionsBox extends StatelessWidget {
                       ? TColors.white
                       : TColors.primary,
                   decoration: TextDecoration.underline,
-                  backgroundColor: dark
-                      ? TColors.white
-                      : TColors.primary,
                 ),
               ),
               TextSpan(
@@ -62,9 +58,7 @@ class TTermAndConditionsBox extends StatelessWidget {
                       ? TColors.white
                       : TColors.primary,
                   decoration: TextDecoration.underline,
-                  backgroundColor: dark
-                      ? TColors.white
-                      : TColors.primary,
+
                 ),
               ),
             ],

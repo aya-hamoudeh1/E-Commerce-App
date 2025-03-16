@@ -8,7 +8,7 @@ class TImages{
   static const String facebook = "assets/logos/Facebook –logo.jpg";
 
   // OnBoarding Images
-static const String onBoardingImage1 = "assets/images/on_boarding_images/test.svg";
-  static const String onBoardingImage2 = "assets/images/on_boarding_images/test.svg";
-  static const String onBoardingImage3 = "assets/images/on_boarding_images/test.svg";
+static const String onBoardingImage1 = "assets/images/animations/Animatio1.json";
+  static const String onBoardingImage2 = "assets/images/animations/Animatio1.json";
+  static const String onBoardingImage3 = "assets/images/animations/Animatio1.json";
 }

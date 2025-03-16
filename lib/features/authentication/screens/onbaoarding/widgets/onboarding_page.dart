@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:lottie/lottie.dart';
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/helpers/helper_functions.dart';
 
@@ -19,7 +19,7 @@ class OnBoardingPage extends StatelessWidget {
       padding: const EdgeInsets.all(TSizes.defaultSpace),
       child: Column(
         children: [
-          SvgPicture.asset(
+          Lottie.asset(
             image,
             width: THelperFunction.screenWidth() * 0.8,
             height: THelperFunction.screenHeight() * 0.6,
