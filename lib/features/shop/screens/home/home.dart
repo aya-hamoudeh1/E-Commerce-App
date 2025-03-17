@@ -1,3 +1,5 @@
+import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
@@ -24,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                   ),
                   SizedBox(height: TSizes.spaceBtwSections),
 
-                  /// Categories
+                  /// Heading
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
@@ -32,8 +34,12 @@ class HomeScreen extends StatelessWidget {
                         TSectionHeading(
                           title: 'Popular Categories',
                           showActionButton: false,
+                          textColor: TColors.white,
                         ),
                         SizedBox(height: TSizes.spaceBtwItems),
+
+                        /// Categories
+                        THomeCategories()
                       ],
                     ),
                   ),
