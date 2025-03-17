@@ -1,5 +1,7 @@
+import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
+import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,7 +15,15 @@ class HomeScreen extends StatelessWidget {
             TPrimaryHeaderContainer(
               child: Column(
                 children: [
+                  SizedBox(height: TSizes.spaceBtwSections),
+
                   /// Searchbar
+                  TSearchContainer(
+                    text: 'Search in Store',
+                  ),
+                  SizedBox(height: TSizes.spaceBtwSections),
+
+
                   /// Categories
                 ],
               ),
