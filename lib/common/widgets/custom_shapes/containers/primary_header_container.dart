@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-
+import '../../../../features/shop/screens/home/widgets/home_appbar.dart';
 import '../../../../utils/constants/colors.dart';
 import '../curved_edges/curved_edge_widget.dart';
 import 'circular_container.dart';
@@ -36,6 +36,16 @@ class TPrimaryHeaderContainer extends StatelessWidget {
                 child: TCircularContainer(
                   backgroundColor: TColors.textWhite.withOpacity(0.1),
                 ),
+              ),
+              const Positioned(
+                top: 50,
+                left: 20,
+                right: 20,
+                child: THomeAppBar(),
+              ),
+              Positioned.fill(
+                top: 100,
+                child: child,
               ),
             ],
           ),
