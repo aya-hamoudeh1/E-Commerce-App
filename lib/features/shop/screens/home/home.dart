@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TPrimaryHeaderContainer(
+            const TPrimaryHeaderContainer(
               child: Column(
                 children: [
                   SizedBox(height: TSizes.spaceBtwSections),
@@ -52,11 +52,11 @@ class HomeScreen extends StatelessWidget {
 
             /// Body
             Padding(
-              padding: EdgeInsets.all(TSizes.defaultSpace),
+              padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   /// Promo Slider
-                  TPromoSlider(
+                  const TPromoSlider(
                     banners: [
                       "assets/logos/splash_logo_black.png",
                       "assets/logos/google_logo.jpg",
@@ -64,7 +64,14 @@ class HomeScreen extends StatelessWidget {
                       "assets/logos/Facebook –logo.jpg",
                     ],
                   ),
-                  SizedBox(height: TSizes.spaceBtwSections),
+                  const SizedBox(height: TSizes.spaceBtwSections),
+
+                  /// Heading
+                  TSectionHeading(
+                    title: 'Popular Product',
+                    onPressed: () {},
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwItems),
 
                   /// Popular Products
                   TGridLayout(
