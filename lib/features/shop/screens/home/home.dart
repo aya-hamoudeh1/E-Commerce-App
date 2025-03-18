@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
@@ -43,6 +44,19 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+              ),
+            ),
+
+            /// Body
+            Padding(
+              padding: EdgeInsets.all(TSizes.defaultSpace),
+              child: TPromoSlider(
+                banners: [
+                  "assets/logos/splash_logo_black.png",
+                  "assets/logos/google_logo.jpg",
+                  "assets/logos/splash_logo_white.png",
+                  "assets/logos/Facebook –logo.jpg",
                 ],
               ),
             ),
