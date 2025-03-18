@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
@@ -13,7 +14,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -54,6 +55,7 @@ class HomeScreen extends StatelessWidget {
               padding: EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
+                  /// Promo Slider
                   TPromoSlider(
                     banners: [
                       "assets/logos/splash_logo_black.png",
@@ -65,7 +67,10 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Popular Products
-                  TProductCardVertical(),
+                  TGridLayout(
+                    itemCount: 2,
+                    itemBuilder: (_, index) => const TProductCardVertical(),
+                  ),
                 ],
               ),
             ),
