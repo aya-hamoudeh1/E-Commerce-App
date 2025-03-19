@@ -92,6 +92,7 @@ class TProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
+
             const Spacer(),
 
             /// Price Row
