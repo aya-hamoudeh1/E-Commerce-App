@@ -1,4 +1,5 @@
 import 'package:e_commerce_app/common/widgets/layouts/grid_layout.dart';
+import 'package:e_commerce_app/features/shop/screens/home/widgets/home_appbar.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:e_commerce_app/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
@@ -18,22 +19,28 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            /// Header
             const TPrimaryHeaderContainer(
               child: Column(
                 children: [
+                  SizedBox(height: TSizes.spaceBtwItems),
+                  /// Appbar
+                  THomeAppBar(),
                   SizedBox(height: TSizes.spaceBtwSections),
 
                   /// Searchbar
                   TSearchContainer(
                     text: 'Search in Store',
+                    showBorder: false,
                   ),
                   SizedBox(height: TSizes.spaceBtwSections),
 
-                  /// Heading
+                  /// Categories
                   Padding(
                     padding: EdgeInsets.only(left: TSizes.defaultSpace),
                     child: Column(
                       children: [
+                        /// Heading
                         TSectionHeading(
                           title: 'Popular Categories',
                           showActionButton: false,
@@ -46,6 +53,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: TSizes.spaceBtwSections),
                 ],
               ),
             ),

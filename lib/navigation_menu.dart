@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/features/personalization/screens/settings/settings.dart';
 import 'package:e_commerce_app/features/shop/screens/store/store.dart';
 import 'package:e_commerce_app/features/shop/screens/wishlist/wishlist.dart';
 import 'package:e_commerce_app/utils/constants/colors.dart';
@@ -13,7 +14,7 @@ class NavigationMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(NavigationController());
-    final darkMode= THelperFunction.isDarkMode(context);
+    final darkMode = THelperFunction.isDarkMode(context);
     return Scaffold(
       bottomNavigationBar: Obx(
         () => NavigationBar(
@@ -44,8 +45,6 @@ class NavigationController extends GetxController {
     const HomeScreen(),
     const StoreScreen(),
     const FavoriteScreen(),
-    Container(
-      color: Colors.orange,
-    ),
+    const SettingScreen(),
   ];
 }
