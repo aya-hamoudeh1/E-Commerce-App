@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/utils/constants/colors.dart';
 import 'package:e_commerce_app/utils/theme/custom_themes/appbar_theme.dart';
 import 'package:e_commerce_app/utils/theme/custom_themes/bottom_sheet_theme.dart';
 import 'package:e_commerce_app/utils/theme/custom_themes/checkbox_theme.dart';
@@ -15,7 +16,7 @@ class TAppTheme {
     useMaterial3: true,
     fontFamily: "Poppins",
     brightness: Brightness.light,
-    primaryColor: Colors.blue,
+    primaryColor: TColors.primary,
     textTheme: TTextTheme.lightTextTheme,
     chipTheme: TChipTheme.lightChipTheme,
     scaffoldBackgroundColor: Colors.white,
@@ -30,8 +31,9 @@ class TAppTheme {
   static ThemeData darkTheme = ThemeData(
     useMaterial3: true,
     fontFamily: "Poppins",
+    disabledColor: TColors.grey,
     brightness: Brightness.dark,
-    primaryColor: Colors.blue,
+    primaryColor: TColors.primary,
     textTheme: TTextTheme.darkTextTheme,
     chipTheme: TChipTheme.darkChipTheme,
     scaffoldBackgroundColor: Colors.black,
