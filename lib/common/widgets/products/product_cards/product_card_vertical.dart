@@ -76,7 +76,6 @@ class TProductCardVertical extends StatelessWidget {
                 ],
               ),
             ),
-
             const SizedBox(height: TSizes.spaceBtwItems / 2),
 
             /// -- Details
