@@ -1,4 +1,6 @@
+import 'package:e_commerce_app/features/shop/screens/sub_category/sub_categories.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:get/get.dart';
 
 import '../../../../../common/widgets/image_text_widgets/vertical_image_text.dart';
 
@@ -19,7 +21,7 @@ class THomeCategories extends StatelessWidget {
           return TVerticalImageText(
             image: 'assets/logos/splash_logo_white.png',
             title: 'Shoes',
-            onTap: () {},
+            onTap: () => Get.to(() => const SubCategoriesScreen()),
           );
         },
       ),

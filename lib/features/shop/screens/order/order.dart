@@ -10,6 +10,7 @@ class OrderScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: TAppBar(
+        showBackArrow: true,
         title: Text(
           'My Order',
           style: Theme.of(context).textTheme.headlineSmall,
